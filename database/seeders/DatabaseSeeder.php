@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class DatabaseSeeder extends Seeder
 {
@@ -14,8 +15,18 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
-        $this->call([
-            ServiceCategorySeeder::class
-        ]);
+        // $this->call([
+        //     ServiceCategorySeeder::class
+        // ]);
+
+        if(config('database.default') !== 'sqlite'){
+            DB::statement('SET FOREIGN_KEY_CHECKS=0');
+            }
+
+        \App\Models\Service::factory(20)->create();
+
+        if(config('database.default') != 'sqlite'){
+            DB::statement('SET FOREIGN_KEY_CHECKS=1');
+          }
     }
 }
