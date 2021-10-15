@@ -9,3 +9,4 @@
 009 148강 21-10-15 (010강) Admin Delete Service Category  
 010 149강 21-10-15 (011강) Create Services  
 011 150강 21-10-15 (012강) Services by Category  
+012 151강 21-10-15 (013강) Admin Create Services Page  
