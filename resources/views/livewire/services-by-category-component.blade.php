@@ -6,7 +6,7 @@
                 <h1>{{$scategory->name}} Services</h1>
                 <div class="crumbs">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li>/</li>
                         <li>{{$scategory->name}}</li>
                     </ul>
