@@ -85,16 +85,27 @@
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="slug" class="control-label col-sm-3">Service Category: </label>
+                                            <label for="slug" class="control-label col-sm-3">Discount Type: </label>
                                             <div class="col-sm-9">
                                                 <select class="form-control" wire:model="discount_type">
-                                                    <option value="">Select Service Category</option>
+                                                    <option value="">Select Discount Type</option>
                                                     <option value="fixed">Fixed</option>
                                                     <option value="percent">Percent</option>
                                                 </select>
                                                 @error('discount_type') <p class="text-danger">{{$message}}</p> @enderror
                                             </div>
                                         </div>
+
+                                        <div class="form-group">
+                                            <label for="slug" class="control-label col-sm-3">Featured: </label>
+                                            <div class="col-sm-9">
+                                                <select class="form-control" wire:model="featured">
+                                                    <option value="0">No</option>
+                                                    <option value="1">Yes</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
                                         <div class="form-group">
                                             <label for="slug" class="control-label col-sm-3">Description: </label>
                                             <div class="col-sm-9">
