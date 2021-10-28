@@ -20,3 +20,4 @@
 020 164강 21-10-27 (021강) Show Selected Service Categories on Homepage  
 021 165강 21-10-27 (022강) Show Appliance Services on Homepage  
 022 166강 21-10-28 (023강) Making Slider Dynamic  
+023 167강 21-10-28 (024강) Search Services  
