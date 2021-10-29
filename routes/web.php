@@ -4,6 +4,7 @@ use App\Http\Controllers\SearchController;
 use App\Http\Livewire\Admin\AdminAddServiceCategoryComponent;
 use App\Http\Livewire\Admin\AdminAddServiceComponent;
 use App\Http\Livewire\Admin\AdminAddSlideComponent;
+use App\Http\Livewire\Admin\AdminContactComponent;
 use App\Http\Livewire\Admin\AdminDashboardComponent;
 use App\Http\Livewire\Admin\AdminEditServiceCategoryComponent;
 use App\Http\Livewire\Admin\AdminEditServiceComponent;
@@ -13,6 +14,7 @@ use App\Http\Livewire\Admin\AdminServicesByCategoryComponent;
 use App\Http\Livewire\Admin\AdminServicesComponent;
 use App\Http\Livewire\Admin\AdminSliderComponent;
 use App\Http\Livewire\ChangeLocationComponent;
+use App\Http\Livewire\ContactComponent;
 use App\Http\Livewire\Customer\CustomerDashboardComponent;
 use App\Http\Livewire\HomeComponent;
 use App\Http\Livewire\ServiceCategoriesComponent;
@@ -48,6 +50,7 @@ Route::get('/autocomplete',[SearchController::class,'autocomplete'])->name('auto
 Route::post('/search',[SearchController::class,'searchService'])->name('searchService');
 
 Route::get('/change-location',ChangeLocationComponent::class)->name('home.change_location');
+Route::get('/contact-us',ContactComponent::class)->name('home.contact');
 
 //For Customer
 Route::middleware(['auth:sanctum', 'verified'])->group(function(){
@@ -75,4 +78,5 @@ Route::middleware(['auth:sanctum', 'verified', 'authadmin'])->group(function(){
     Route::get('/admin/slider',AdminSliderComponent::class)->name('admin.slider');
     Route::get('/admin/slide/add',AdminAddSlideComponent::class)->name('admin.add_slide');
     Route::get('/admin/slide/edit/{slide_id}',AdminEditSlideComponent::class)->name('admin.edit_slide');
+    Route::get('/admin/contacts',AdminContactComponent::class)->name('admin.contacts');
 });
