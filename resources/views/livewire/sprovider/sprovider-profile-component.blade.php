@@ -51,6 +51,7 @@
                                                     {{$sprovider->category->name}}</p>
                                                 @endif
                                             <p><b>Service Locations : </b> {{$sprovider->service_locations}}</p>
+                                            <a href="{{route('sprovider.edit_profile')}}" class="btn btn-info pull-right">Eidt Profile</a>
                                         </div>
                                     </div>
                                 </div>
