@@ -25,3 +25,5 @@
 025 169강 21-10-28 (026강) Create Service Provider's Profile  
 026 170강 21-10-29 (027강) Update Service Provider's Profile  
 027 171강 21-10-29 (028강) Create Contact Us Page  
+028 172강 21-10-31 (029강) Admin Show All Service Providers (cartegory->name 에러)  
+ 
